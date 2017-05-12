@@ -563,6 +563,10 @@ header {
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    @media screen and (max-width: 480px) {
+      header .container {
+        display: block;
+        text-align: center; } }
 
 .logo {
   margin-top: 25px; }
@@ -578,12 +582,19 @@ header {
     margin-top: -5px;
     font-size: 0.65em;
     font-weight: lighter; }
+  @media screen and (max-width: 480px) {
+    .logo {
+      margin-top: 0;
+      margin-bottom: 20px; } }
 
 .site-nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-top: 25px; }
+  @media screen and (max-width: 480px) {
+    .site-nav {
+      margin-top: 0; } }
 
 .nav-item {
   display: inline-block;
@@ -633,6 +644,11 @@ header {
     #apply .btn-apply:hover {
       -ms-transform: scale(1.1);
           transform: scale(1.1); }
+  @media screen and (max-width: 480px) {
+    #apply .mushroom {
+      display: none; }
+    #apply .right {
+      text-align: left; } }
 
 footer {
   padding: 30px 0; }
