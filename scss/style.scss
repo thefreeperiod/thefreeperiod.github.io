@@ -7,3 +7,171 @@
 @import 'vendor/_grid.scss';
 
 // Site styles
+body {
+  font-family: Apercu;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1em;
+  color: $bluishgrey;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+a {
+  color: $black;
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 0;
+  .container {
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.divider {
+  width: 90px;
+  height: 8px;
+  background: $brandcolor;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.right {
+  text-align: right;
+}
+
+// Header
+header {
+  min-height: 500px;
+  background: url(../img/hero.jpg) center center no-repeat;
+  background-size: cover;
+  color: white;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  margin-top: 25px;
+  h2 {
+    margin: 0;
+    padding: 0;
+    color: $brandcolor;
+    font-size: 2em;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.4em;
+    margin-top: -5px;
+    font-size: 0.65em;
+    font-weight: lighter;
+  }
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 20px;
+  a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      opacity: 0;
+      margin-top: 29px;
+      position: absolute;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: $brandcolor;
+      content: '';
+      transition: width 0.3s, opacity 0.2s;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#mission {
+  background-color: $lightgrey;
+  text-align: center;
+}
+
+#about {
+  .divider {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#apply {
+  background-color: $brandcolor;
+  color: $black;
+  padding: 30px 0;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .mushroom {
+    max-width: 100%;
+  }
+
+  .btn-apply {
+    background-color: $black;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 3px;
+    margin-top: 20px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+footer {
+  padding: 30px 0;
+
+  h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+  }
+}
