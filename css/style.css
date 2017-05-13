@@ -640,6 +640,7 @@ header {
   background-color: #F2F2F2;
   text-align: center; }
 
+#ideology .divider,
 #about .divider {
   margin-left: 0;
   margin-right: 0; }
