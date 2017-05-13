@@ -18,7 +18,7 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 a {
@@ -70,6 +70,10 @@ header {
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    min-height: 200px;
+  }
 }
 
 .logo {
@@ -79,6 +83,10 @@ header {
     padding: 0;
     color: $brandcolor;
     font-size: 2em;
+
+    @media screen and (max-width: 480px) {
+      padding-top: 40px;
+    }
   }
 
   h5 {

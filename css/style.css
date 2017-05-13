@@ -525,7 +525,7 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 10px; }
+  padding: 0 15px; }
 
 a {
   color: #111111;
@@ -567,6 +567,9 @@ header {
       header .container {
         display: block;
         text-align: center; } }
+  @media screen and (max-width: 480px) {
+    header {
+      min-height: 200px; } }
 
 .logo {
   margin-top: 25px; }
@@ -575,6 +578,9 @@ header {
     padding: 0;
     color: #E9CA23;
     font-size: 2em; }
+    @media screen and (max-width: 480px) {
+      .logo h2 {
+        padding-top: 40px; } }
   .logo h5 {
     text-transform: uppercase;
     margin: 0;
