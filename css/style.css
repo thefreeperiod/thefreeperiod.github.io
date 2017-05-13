@@ -567,6 +567,8 @@ header {
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    header .container a {
+      text-decoration: none; }
     @media screen and (max-width: 480px) {
       header .container {
         display: block;
@@ -576,6 +578,7 @@ header {
       min-height: 200px; } }
 
 .logo {
+  color: white;
   margin-top: 25px; }
   .logo h2 {
     margin: 0;

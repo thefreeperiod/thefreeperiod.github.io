@@ -71,6 +71,10 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    a {
+      text-decoration: none;
+    }
+
     @media screen and (max-width: 480px) {
       display: block;
       text-align: center;
@@ -83,6 +87,7 @@ header {
 }
 
 .logo {
+  color: white;
   margin-top: 25px;
   h2 {
     margin: 0;
