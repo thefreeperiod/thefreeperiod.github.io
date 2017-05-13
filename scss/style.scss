@@ -42,12 +42,18 @@ section {
 }
 
 .divider {
-  width: 90px;
-  height: 8px;
+  width: 0;
+  height: 6px;
   background: $brandcolor;
   border: none;
   margin-top: 40px;
   margin-bottom: 40px;
+  transition: all 0.6s cubic-bezier(0.4, 0.06, 0.98, 0.42);
+}
+
+// Helper class for divider animation
+.is-showing {
+  width: 90px;
 }
 
 .right {

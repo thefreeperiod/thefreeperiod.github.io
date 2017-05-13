@@ -1,69 +1,10 @@
-/*!
- * thefreeperiod
- * Landing Page for The Free Period
- * thefreeperiod.github.io
- * @author Ratik Sharma
- * @version 1.0.0
- * Copyright 2017. MIT licensed.
- */
-
-/*!
- * thefreeperiod
- * Landing Page for The Free Period
- * thefreeperiod.github.io
- * @author Ratik Sharma
- * @version 1.0.0
- * Copyright 2017. MIT licensed.
- */
-
-/*!
- * thefreeperiod
- * Landing Page for The Free Period
- * thefreeperiod.github.io
- * @author Ratik Sharma
- * @version 1.0.0
- * Copyright 2017. MIT licensed.
- */
-
-/*!
- * thefreeperiod
- * Landing Page for The Free Period
- * thefreeperiod.github.io
- * @author Ratik Sharma
- * @version 1.0.0
- * Copyright 2017. MIT licensed.
- */
-
-/*!
- * thefreeperiod
- * Landing Page for The Free Period
- * thefreeperiod.github.io
- * @author Ratik Sharma
- * @version 1.0.0
- * Copyright 2017. MIT licensed.
- */
-
-/*!
- * thefreeperiod
- * Landing Page for The Free Period
- * thefreeperiod.github.io
- * @author Ratik Sharma
- * @version 1.0.0
- * Copyright 2017. MIT licensed.
- */
-
-/*!
- * rapid
- * Modern front-end boilerplate for rapid development.
- * https://github.com/libhide/rapid
- * @author Ratik Sharma
- * @version 1.0.0
- * Copyright 2017. MIT licensed.
- */
 'use strict';
 
-// Stuff
-// ...
-
-// Remove this to and then start working
-console.log("Hello world!")
+$('#mission .divider').addClass('is-showing');
+$(window).scroll(function() {
+    // Window is scrolling
+    var wScroll = $(this).scrollTop();
+    if (wScroll + 500 > $('#about').offset().top) {
+        $('#about .divider').addClass('is-showing');
+    }
+});
