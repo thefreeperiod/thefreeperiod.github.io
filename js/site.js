@@ -1,12 +1,17 @@
 'use strict';
 
 // Divider animation
-$('#mission .divider').addClass('is-showing');
 $(window).scroll(function() {
     // Window is scrolling
     var wScroll = $(this).scrollTop();
+    if (wScroll + 500 > $('#mission').offset().top) {
+        $('#mission .divider').addClass('is-showing');
+    }
     if (wScroll + 500 > $('#about').offset().top) {
         $('#about .divider').addClass('is-showing');
+    }
+    if (wScroll + 500 > $('#methodology').offset().top) {
+        $('#methodology .divider').addClass('is-showing');
     }
 });
 

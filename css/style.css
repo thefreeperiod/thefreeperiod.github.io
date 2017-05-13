@@ -552,8 +552,14 @@ section {
 .is-showing {
   width: 90px; }
 
+.center {
+  text-align: center; }
+
 .right {
   text-align: right; }
+  @media screen and (max-width: 480px) {
+    .right {
+      text-align: left; } }
 
 header {
   min-height: 500px;
@@ -646,24 +652,30 @@ header {
     margin-bottom: 50px; }
   #apply .mushroom {
     max-width: 100%; }
-  #apply .btn-apply {
-    background-color: #111111;
-    color: #fff;
-    padding: 10px 40px;
-    border-radius: 3px;
-    margin-top: 20px;
-    border: none;
-    transition: transform 0.3s ease-in-out; }
-    #apply .btn-apply:hover {
-      -ms-transform: scale(1.1);
-          transform: scale(1.1); }
   @media screen and (max-width: 480px) {
     #apply .mushroom {
       display: none; }
     #apply .right {
       text-align: left; } }
 
+.btn-apply {
+  background-color: #111111;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 3px;
+  margin-top: 20px;
+  border: none;
+  transition: transform 0.3s ease-in-out; }
+  .btn-apply:hover {
+    -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+
+#methodology .divider {
+  margin-left: 0;
+  margin-right: 0; }
+
 footer {
+  background-color: #F2F2F2;
   padding: 30px 0; }
   footer h3 {
     margin-top: 0;
