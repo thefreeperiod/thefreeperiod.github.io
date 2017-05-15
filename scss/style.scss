@@ -26,6 +26,10 @@ a {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+}
+
 section {
   padding: 60px 0;
   .container {
@@ -69,10 +73,11 @@ section {
 
 // Header
 header {
-  min-height: 500px;
-  background: url(../img/hero.jpg) center center no-repeat;
-  background-size: cover;
-  color: white;
+  min-height: 130px;
+  // background: url(../img/hero.jpg) center center no-repeat;
+  background-color: $brandcolor;
+  // background-size: cover;
+  color: $black;
   .container {
     display: flex;
     align-items: center;
@@ -99,7 +104,7 @@ header {
   h2 {
     margin: 0;
     padding: 0;
-    color: $brandcolor;
+    color: $black;
     font-size: 2em;
 
     @media screen and (max-width: 480px) {
@@ -114,6 +119,7 @@ header {
     margin-top: -5px;
     font-size: 0.65em;
     font-weight: lighter;
+    color: $black;
   }
 
   @media screen and (max-width: 480px) {
@@ -127,6 +133,7 @@ header {
   padding: 0;
   list-style-type: none;
   margin-top: 25px;
+  color: $black;
 
   @media screen and (max-width: 480px) {
     margin-top: 0;
@@ -137,7 +144,7 @@ header {
   display: inline-block;
   margin: 0 20px;
   a {
-    color: white;
+    color: $black;
     position: relative;
     text-decoration: none;
 
@@ -148,7 +155,7 @@ header {
       left: 0;
       width: 0%;
       height: 3px;
-      background: $brandcolor;
+      background: $black;
       content: '';
       transition: width 0.3s, opacity 0.2s;
     }
@@ -158,6 +165,14 @@ header {
         opacity: 1;
         width: 100%;
       }
+    }
+  }
+}
+
+#about {
+  .tree {
+    @media screen and (max-width: 480px) {
+      display: none;
     }
   }
 }
@@ -213,7 +228,6 @@ header {
 }
 
 #methodology {
-
   .divider {
     margin-left: 0;
     margin-right: 0;

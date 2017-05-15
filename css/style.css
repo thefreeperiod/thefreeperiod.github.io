@@ -531,6 +531,9 @@ a {
   color: #111111;
   text-decoration: underline; }
 
+img {
+  max-width: 100%; }
+
 section {
   padding: 60px 0; }
   section .container h2 {
@@ -562,10 +565,9 @@ section {
       text-align: left; } }
 
 header {
-  min-height: 500px;
-  background: url(../img/hero.jpg) center center no-repeat;
-  background-size: cover;
-  color: white; }
+  min-height: 130px;
+  background-color: #E9CA23;
+  color: #111111; }
   header .container {
     display: -ms-flexbox;
     display: flex;
@@ -589,7 +591,7 @@ header {
   .logo h2 {
     margin: 0;
     padding: 0;
-    color: #E9CA23;
+    color: #111111;
     font-size: 2em; }
     @media screen and (max-width: 480px) {
       .logo h2 {
@@ -600,7 +602,8 @@ header {
     letter-spacing: 0.4em;
     margin-top: -5px;
     font-size: 0.65em;
-    font-weight: lighter; }
+    font-weight: lighter;
+    color: #111111; }
   @media screen and (max-width: 480px) {
     .logo {
       margin-top: 0;
@@ -610,7 +613,8 @@ header {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 25px; }
+  margin-top: 25px;
+  color: #111111; }
   @media screen and (max-width: 480px) {
     .site-nav {
       margin-top: 0; } }
@@ -619,7 +623,7 @@ header {
   display: inline-block;
   margin: 0 20px; }
   .nav-item a {
-    color: white;
+    color: #111111;
     position: relative;
     text-decoration: none; }
     .nav-item a::after {
@@ -629,12 +633,16 @@ header {
       left: 0;
       width: 0%;
       height: 3px;
-      background: #E9CA23;
+      background: #111111;
       content: '';
       transition: width 0.3s, opacity 0.2s; }
     .nav-item a:hover::after {
       opacity: 1;
       width: 100%; }
+
+@media screen and (max-width: 480px) {
+  #about .tree {
+    display: none; } }
 
 #mission {
   background-color: #F2F2F2;
